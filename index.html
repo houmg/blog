@@ -1,9 +1,9 @@
 ---
 layout: default
-title: first blog
+title: 侯明光的博客
 ---
 <h2>{{ page.title }}</h2>
-<p>last blog</p>
+<p>最新文章</p>
 <ul>
     {% for post in site.posts %}
     <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
