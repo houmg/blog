@@ -10,8 +10,8 @@ tags: [xray, ClawCloud]
 最小化成本实现稳定的科学上网
 
 ## 正文
-1.需要VPS,推荐薅羊毛，ClawCloud注册，github 账号满 180 天即可领每月 5 刀额度。
-ClawCloud爪云首页，https://run.claw.cloud
+1.需要VPS,推荐[ClawCloud爪云](https://run.claw.cloud)，github 账号满 180 天即可领每月 5 刀额度。
+
 
 ![注册页面]({{ '/assets/images/ClawCloud_sign.png' | relative_url }}) <!-- 自适应大小 -->
 
@@ -85,9 +85,11 @@ File content:
 ![总览页面]({{ '/assets/images/xray_overview.png' | relative_url }}) <!-- 自适应大小 -->
 
 3.客户端配置
-windows/android 下需安装 v2rayNG，https://github.com/2dust/v2rayN/releases
+windows/android 下需安装 [v2rayNG](https://github.com/2dust/v2rayN/releases)
 
 在 v2rayN 中，添加节点时填写：
+```text
 vless://xxx(uuid)@xxx?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=xxx(Public key)&sid=xxx&type=tcp&headerType=none#ClawCloud
+```
 
-参考：Docker Compose 部署 Xray 代理服务器 https://blog.leoho.dev/posts/docker-compose-deploy-xray/
+参考：[Docker Compose 部署 Xray 代理服务器](https://blog.leoho.dev/posts/docker-compose-deploy-xray/)
