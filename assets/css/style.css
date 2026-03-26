@@ -1,0 +1,169 @@
+/* Ruanyifeng 风格参考：轻量单栏、浅色底、统一标题/链接配色
+   注意：不是全照搬，只借鉴布局与配色思路。 */
+
+:root {
+  --bg: #f5f5d5;
+  --text: #111111;
+  --muted: #556677;
+  --link: #556677;
+  --link-hover: #665544;
+  --border: #d3d3d3;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  /* 阮一峰博客常用：正文衬线字体 */
+  font-family: Georgia, "Times New Roman", "Microsoft YaHei", "PingFang SC", serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1em 1em 2em;
+}
+
+/* 首页（最新文章等） */
+.home h1.page-heading {
+  /* 阮一峰博客标题使用更“科技感”的无衬线 */
+  font-family: "Trebuchet MS", Arial, "Lucida Grande", Verdana, "Microsoft YaHei", sans-serif;
+  font-size: 1.55em;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0.2em 0 0.35em;
+}
+
+.home h2#最新文章,
+.home h2.post-list-heading,
+.content h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.2em;
+  font-family: "Trebuchet MS", Arial, "Lucida Grande", Verdana, "Microsoft YaHei", sans-serif;
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6em 0 1em;
+}
+
+.post-list h3 {
+  margin: 0.4em 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  /* 最新文章里没有 h3，这段保留但不强制字体，避免影响一致性 */
+  font-family: inherit;
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.95em;
+}
+
+.post-list li {
+  margin: 0.45em 0;
+}
+
+.rss-subscribe {
+  color: var(--muted);
+  font-size: 0.95em;
+}
+
+.more-articles {
+  margin: 1em 0 0.5em;
+  color: var(--muted);
+  font-size: 1em;
+}
+
+.more-articles a:hover {
+  text-decoration: underline;
+}
+
+/* 文章页内容 */
+.header h1 {
+  font-size: 1.9em;
+  margin: 0.4em 0 0.6em;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  font-family: "Trebuchet MS", Arial, "Lucida Grande", Verdana, "Microsoft YaHei", sans-serif;
+}
+
+.content {
+  margin-top: 0.6em;
+}
+
+.content h2 {
+  margin-top: 0.9em;
+  font-size: 1.5em;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  font-family: "Trebuchet MS", Arial, "Lucida Grande", Verdana, "Microsoft YaHei", sans-serif;
+}
+
+.content h3 {
+  margin-top: 0.9em;
+  font-size: 1.2em;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  font-family: "Trebuchet MS", Arial, "Lucida Grande", Verdana, "Microsoft YaHei", sans-serif;
+}
+
+.content p {
+  margin: 0.8em 0;
+}
+
+/* 图片自适应样式 */
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+/* 代码块样式优化 */
+.content pre {
+  background-color: #f5f5f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1.2em;
+  overflow-x: auto;
+  font-size: 0.85em;
+  line-height: 1.6;
+  margin: 1.2em 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: #0a0a0a;
+}
+
+.content pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: inherit;
+  border-radius: 0;
+  color: #0a0a0a !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* 行内代码样式 */
+.content p code,
+.content li code {
+  color: #24292e;
+  background-color: #f8f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}

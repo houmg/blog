@@ -20,7 +20,7 @@
 
 title: 侯明光的博客
 email: hou_mg@126.com
-description: "记录教程笔记和技术分享"
+description: "记录技术笔记和读书分享"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://houmg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -28,6 +28,7 @@ github_username:  houmg
 
 # Build settings
 theme: minima
+header_pages: []
 plugins:
   - jekyll-feed
 
@@ -50,3 +51,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge

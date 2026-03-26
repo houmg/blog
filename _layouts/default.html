@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
     <title>{{ page.title }}</title>
+    {% include head.html %}
 </head>
+
 <body>
-
-    {{ content }}
-
+    <div class="container">
+        {{ content }}
+    </div>
 </body>
+
 </html>
