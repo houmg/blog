@@ -5,6 +5,7 @@ date: 2026-03-25
 categories: [技术]
 tags: [xray, ClawCloud]
 ---
+**后记：用了几天被封，此方案不推荐。**
 
 ## 目的
 最小化成本实现稳定的科学上网
@@ -93,4 +94,4 @@ vless://xxx(uuid)@xxx?encryption=none&flow=xtls-rprx-vision&security=reality&sni
 
 参考：[Docker Compose 部署 Xray 代理服务器](https://blog.leoho.dev/posts/docker-compose-deploy-xray/)
 
-**后记：用了几天被封，此方案不推荐。**
+
