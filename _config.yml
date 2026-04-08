@@ -55,3 +55,4 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
+image_path: "/blog/assets/images"

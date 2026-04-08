@@ -12,8 +12,7 @@ tags: [xray, ClawCloud]
 ## 正文
 1.需要VPS,推荐[ClawCloud爪云](https://run.claw.cloud)，github 账号满 180 天即可领每月 5 刀额度。
 
-
-![注册页面]({{ '/assets/images/ClawCloud_sign.png' | relative_url }}) <!-- 自适应大小 -->
+![注册页面]({{ site.image_path }}/2026-03-25-deploy-xray-reality-on-ClawCloud/ClawCloud_sign.png) 
 
 2.创建 xray-reality 容器
 
@@ -82,7 +81,7 @@ File content:
 }
 ```
 
-![总览页面]({{ '/assets/images/xray_overview.png' | relative_url }}) <!-- 自适应大小 -->
+![总览页面]({{ site.image_path }}/2026-03-25-deploy-xray-reality-on-ClawCloud/xray_overview.png ) 
 
 3.客户端配置
 windows/android 下需安装 [v2rayNG](https://github.com/2dust/v2rayN/releases)
@@ -93,3 +92,5 @@ vless://xxx(uuid)@xxx?encryption=none&flow=xtls-rprx-vision&security=reality&sni
 ```
 
 参考：[Docker Compose 部署 Xray 代理服务器](https://blog.leoho.dev/posts/docker-compose-deploy-xray/)
+
+**后记：用了几天被封，此方案不推荐。**
